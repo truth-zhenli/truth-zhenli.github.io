@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	background-color: transparent;
+	color:#111111;
+	font-family: Arial, Helvetica, sans-serif; /*"Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;*/
+	font-size: normal;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#065388;
+}
+a:hover {
+	color:#990000;	
+}
+a.current:link, a.current:visited {
+	color:#111;
+	font-weight:bold;
+}
+
+
+
+.container {
+	width:1000px;
+	margin:auto;
+}
+
+
+
+.wrapper {
+	box-shadow: 0px 0px 10px #444;
+	-webkit-box-shadow: 0px 0px 10px #444;
+	-moz-box-shadow: 0px 0px 10px #444;
+	margin: 20px 10px;
+}
+
+
+
+.banner {
+	background-color: #1a5275;
+	color: white;
+	height: 100px;
+	padding: 20px;
+	margin:0;
+	background-image: url(../images/others/banner1.jpg);
+	border-radius: 5px;
+}
+.banner h1 {
+	margin:0px 0px 0px 10px;
+	font-size: 300%;
+}
+.banner p {
+	margin:10px 0px 0px 10px;
+	font-size: 150%;
+}
+
+
+
+.navbar {
+	background-color: #cccccc;
+	background-image: url(../images/others/navbar_bg.gif);
+	border-bottom: 1px solid #001a3a;
+	padding: 0;
+	margin: 0;
+	border-radius: 5px;
+}
+.navbar ul {
+	list-style:none;
+	margin-left:5px;
+	margin-right:auto;
+	margin-top:0;
+	margin-bottom:0;
+	padding:0 0 0 0px;
+	height:37px;
+}
+.navbar ul li {
+	display:inline;
+	float:left;
+	margin: 0px 6px;
+}
+.navbar a:link, .navbar a:visited {
+	color: #001a3a;
+	display: block;
+	float: left;
+	line-height: 37px;
+	padding: 0 8px;
+	margin: 0px 6px;
+	font-size: 16px;
+}
+.navbar a:hover {
+	color:#ffffff;
+	/*font-weight:bold;*/
+	background-color: #666666;
+}
+
+
+
+.page {
+	background-color: transparent;
+	overflow:auto;
+}
+
+
+.sidebar_left {
+	width: 25%;
+	float: left;
+	height: 1100px;
+	overflow: hidden;
+	background-color: #ededed;
+	line-height: 140%;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding: 0 0px;
+	border-radius: 5px;
+}
+.sidebar_left h1 {
+	padding:15px 20px;
+	font-size: 120%;
+	font-weight:bold;
+	font-variant: small-caps;
+	BORDER-BOTTOM: #DDD 1px solid;
+}
+.sidebar_left p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding:0 20px;
+}
+
+
+.content_right {
+	width: 70%;
+	overflow: hidden;
+	float:right;
+	margin-top: 15px;
+	margin-right: 25px;	
+	border-radius: 5px;
+}
+.content_right h1 {
+	padding:0 0px;
+	font-size: 120%;
+	font-weight:bold;
+	font-variant: small-caps;
+	BORDER-BOTTOM: #DDD 1px solid;
+}
+.content_right p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.content_right #news {
+	height: 600px;
+	overflow: scroll;
+}
+
+
+
+.footer {
+	color: #aaa;
+	font-size: 80%;
+	text-align: center;
+}
+.footer img {
+	float:left; 
+	margin-left:15px;
+}
+
+
+
+
+/* news*/
+#news .news-item {clear:both; overflow:auto; border-bottom: 1px dotted #E5E5E5; padding: 5px 0 5px 0; margin-bottom: 5px;}
+#news .news-item .news-img {float: left; padding-left: 2%; padding-right: 2px;}
+#news .news-item .news-img img {width: 40px; height:53px; overflow:hidden;}
+#news .news-item .news-excerpt {widht:100%; word-wrap: break-word; font-size: 80%; width: 92%; float: left; padding:0 0 0 1%; line-height:1.4em; color:#333;}
+#news .news-item .news-excerpt .news-title {color: #0074a3; font-weight: bold; margin-bottom: 1.0em; display: block;}
+#news .news-item .news-excerpt .news-date {font-size: 11px; color: #999; display:block;}
+#news .news-item a {text-decoration: none;}
+#news .news-item a:hover {cursor:pointer;}
+#news .news-item a:hover .ap-news-img img{border:1px solid #7DCB53;}
+
+#news .news-item .news-date {
+	background: url(../images/others/calendar4.png) no-repeat;
+	float: left; padding-left: 0px; padding-right: 0px;
+	width: 40px; height:53px; overflow:hidden;
+}
+#news .news-item .news-date span { text-align:center; display: block; }
+#news .news-item .news-date .month {
+	font: bold 9px/normal tahoma; height: 12px; color: rgb(255, 255, 255); text-transform: uppercase; padding-top: 2px; font-size-adjust: none; font-stretch: normal;
+}
+#news .news-item .news-date .day {
+	font: bold 17px/normal tahoma; color: rgb(69, 94, 147); font-size-adjust: none; font-stretch: normal; text-shadow: 0 -1px 0 #111;
+}
+#news .news-item .news-date .year {
+	font: bold 11px/normal tahoma; color: rgb(0, 0, 0); margin-top: 3px; font-size-adjust: none; font-stretch: normal;
+}
+
+/* papers */
+#paperlist .paper-item {clear:both; overflow:auto; border-bottom: 1px dotted #E5E5E5; padding: 5px 0 5px 0; margin-bottom: 5px;}
+#paperlist .paper-item .paper-number {font-size: 11px; color: #999; display:block;}
+#paperlist .paper-item .paper-author {width: 550px; float: left; padding:0px 0px 0 10px; line-height:1.4em; color:#333;}
+#paperlist .paper-item .paper-title {color: #0074a3; font-weight: bold; margin-bottom: 1.0em; display: block;}
+
+
+
+/* people */
+#people {
+	border: 1px solid rgb(221, 221, 221);
+	background-color: rgb(251, 249, 250);
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+#people .dottedline {height:1px;border:none;border-top:2px dotted #E5E5E5;}
+#people .people-item {clear:both; overflow:auto; padding: 5px 0 5px 0; margin-bottom: 5px;}
+#people .people-item .people-img {float: left; padding-left: 2px; padding-right: 2px;}
+#people .people-item .people-img img {width: 150px; height:180px; overflow:hidden;}
+#people .people-item .people-cv {width: 550px; float: left; padding:0px 0px 0 30px; line-height:1.4em; color:#333;}
+#people .people-item .people-cv .people-title {color: #0074a3; font-weight: bold; margin-bottom: 1.0em; display: block;}
+
+
+
+#people-container {
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 15px;
+	overflow:auto
+}
+
+.people-thumbnail {
+	float:left;
+	width: 420px;
+	height: 220px;
+	margin: 5px;	
+}
+.people-thumbnail.wide {
+	width: 720px;
+}
+.people-thumbnail.narrow{
+	width: 280px;
+	height: auto;
+}
+.people-thumbnail .people-title {
+	color: #0074a3; 
+	font-weight: bold; 
+	margin-bottom: 1.0em; 
+	display: block;
+}
+.people-thumbnail img {
+	float: left;
+	max-width: 100%;
+	margin-right: 12px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
