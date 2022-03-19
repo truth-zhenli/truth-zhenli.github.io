@@ -1,12 +1,108 @@
 ﻿<html>
 
+<script type="text/javascript">   
+function password() {   
+var testV = 1;   
+var pass1 = prompt('请输入密码','');   
+while (testV < 3) {   
+if (!pass1)   
+history.go(-1);   
+if (pass1 == "872612696") {//初始密码   
+alert('密码正确');   
+break;   
+}   
+testV+=1;   
+var pass1 =   
+prompt('密码错误!请重新输入:');   
+}   
+if (pass1!="password" & testV ==3)   
+history.go(-1);   
+return " ";   
+}   
+document.write(password());   
+</script> 
+
 <head>
-	<meta http-equiv="refresh" content="0.01; url=https://www.zhenli-truth.xyz/cv/">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>LI Zhen</title>
+	<!-- data -->
+	<script type="text/javascript" src="data/data.js"></script>
+    <!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.html">\x3C/script>')</script>
+    <!-- FlexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+ 	<link rel="stylesheet" href="js/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/styles.css?v=2018081503" media="screen" />
+	<script type="text/javascript" src="js/main.js"></script>    
+	<style>
+        .flexslider {margin-bottom: 10px;}    
+        .flex-control-nav {position: relative; bottom: -3px;}
+    </style>
 </head>
 
 <body>
-	<h1> please click: </br>
-	<a href="https://www.zhenli-truth.xyz/cv/">https://www.zhenli-truth.xyz/cv/ </a>  </h1>
+	<div class="container">
+		<div class="wrapper">
+			<div class="banner">    	  
+				<h1>LI Zhen</h1>
+				<p>&nbsp;Where will be I??</p>
+
+			</div>
+			
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Research.html">Research</a></li>
+					<li><a href="Members.html">Members</a></li>
+					<li><a href="Publications.html">Publications</a></li>
+					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</div>
+    
+			<div style="height:1100px" class="page">
+				<div class="sidebar_left">
+					<img style="width:180px; padding:25px 15px 5px 15px;" src="images/members/lizhen.jpg">
+					<p>Li Zhen</p>
+					<p>self introduction<br />
+						Affinity<br />
+						Address<br />
+						Address<br />
+					</p>
+					<p>Tel: 
+						ZZZZZZZZZ<br />
+						Fax: ZZZZZZZZ<br />
+						Office: ZZZZZZZZ<br />
+						Email: <a href="mailto:lizhenew@gmail.com">lizhenew@gmail.com</a></p>
+					<p>&nbsp;</p>
+					<h1>Links</h1>
+					<ul>
+						<li><a href="https://scholar.google.com/citations?user=9_Z9kVsAAAAJ&hl=zh-CN">Google Scholar</a></li>
+						<li><a href="https://www.researchgate.net/profile/Zhen_Li50">Research Gate</a></li>
+						<!--<li><a href="http://XXXXXXXXXX">XX group @ XX</a></li> -->
+					</ul>
+					<p>&nbsp;</p>
+				</div>
+				
+				<div class="content_right">	               
+					<div id="highlight" class="flexslider">
+						<ul class="slides"></ul>
+					</div>
+		
+					<p> under construction</p>
+					<p>&nbsp;</p>
+					
+					<h1>News</h1>
+					<div id="news"></div><!-- news -->
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>&copy; Copyright LI Zhen</p>
+		</div>
+	</div>
 </body>
 
 </html>
